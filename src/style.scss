@@ -1,0 +1,50 @@
+body {
+  background: #e9ebee;
+
+  header.header {
+    background: #4267b2;
+    border-bottom: 1px;
+    border-bottom-color: #29487d;
+    padding-top: 1px;
+    text-align: center;
+  }
+
+  h1.titleHeader {
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  div.post {
+    width: 700px;
+    //height: 1000px;
+    padding: 30px;
+    background: #ccc;
+    border: 1px;
+    margin-top: 30px;
+    align-content: center;
+    //text-align: center;
+  }
+
+  div.headerPost {
+    background: #1e5dda;
+    height: 100px;
+  }
+
+  img.avatar {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  span.nameUser {
+    color: #666;
+    font-size: 16px;
+  }
+
+  span.horaPost {
+    color: #999;
+    font-size: 14px;
+  }
+}
