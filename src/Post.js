@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import PostHeader from './PostHeader';
+import PostHeader from './Post';
 
 const Post = props => (
   <div className="post">
-    <PostHeader horaPost={Post.props.horaPost} />
     <p>{props.textPost}</p>
   </div>
 );
