@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import PostHeader from './Post';
+import PostHeader from './PostHeader';
 
 const Post = props => (
   <div className="post">
+    <PostHeader />
     <p>{props.textPost}</p>
   </div>
 );

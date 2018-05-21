@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 import Header from './Header';
 import Post from './Post';
 
-// import './style.scss';
+import './style.scss';
 
 class App extends Component {
   posts = {
@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <Fragment>
         <Header />
-        <Post textPost={this.posts.textPost} />
+        <Post textPost={this.posts.textPost} hourPost={this.posts.hourPost} />
       </Fragment>
     );
   }
