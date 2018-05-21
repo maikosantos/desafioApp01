@@ -1,22 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
+import './style.scss';
 import avatar1 from './img/avatar1.png';
 
 const PostHeader = props => (
   <div className="headerPost">
-    <img className="avatar" src={avatar1} alt="avatar" />
-    <span className="nameUser">{props.nameUser}</span>
+    <img className="avatar" src={props.avatar} alt="avatar" />
+    <span className="nameUser"> {props.nameUser} </span>
     <br />
-    <span className="horaPost">{props.hourPost}</span>
+    <span className="horaPost"> {props.hourPost} </span>
     <hr />
-    {props.children}
   </div>
 );
 
 PostHeader.propTypes = {
-  hourPost: PropTypes.string.isRequired,
+  avatar: PropTypes.object.isRequired,
   nameUser: PropTypes.string.isRequired,
+  hourPost: PropTypes.string.isRequired,
 };
 
 export default PostHeader;
