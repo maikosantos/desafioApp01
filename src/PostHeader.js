@@ -14,7 +14,7 @@ const PostHeader = props => (
 );
 
 PostHeader.propTypes = {
-  avatar: PropTypes.object.isRequired,
+  avatar: PropTypes.isRequired,
   nameUser: PropTypes.string.isRequired,
   hourPost: PropTypes.string.isRequired,
 };

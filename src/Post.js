@@ -17,7 +17,7 @@ const Post = props => (
 
 Post.propTypes = {
   post: PropTypes.shape({
-    avatar: PropTypes.object,
+    avatar: PropTypes.object.isRequired,
     textPost: PropTypes.string,
     nameUser: PropTypes.string,
     hourPost: PropTypes.string,
