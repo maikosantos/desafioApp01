@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import Header from './Header';
 import Post from './Post';
 
@@ -26,18 +26,16 @@ const post = [
     id: 3,
     textPost: 'texto do post 3',
     nameUser: 'Maiko Santos Silva',
-    hourPost: 'há 27 min',
+    hourPost: 'há 28 min',
     avatar: avatar3,
   },
 ];
 
-export default class App extends Component {
-  render() {
-    return (
-      <Fragment>
-        <Header />
-        {post.map(p => <Post key={p.id} post={p} />)}
-      </Fragment>
-    );
-  }
-}
+const App = () => (
+  <Fragment>
+    <Header />
+    {post.map(p => <Post key={p.id} post={p} />)}
+  </Fragment>
+);
+
+export default App;
