@@ -3,9 +3,9 @@ import Header from './Header';
 import Post from './Post';
 
 import './style.scss';
-import avatar1 from './img/avatar1.png';
-import avatar2 from './img/avatar2.png';
-import avatar3 from './img/avatar3.png';
+import avatar1 from './assets/img/avatar1.png';
+import avatar2 from './assets/img/avatar2.png';
+import avatar3 from './assets/img/avatar3.png';
 
 const post = [
   {
@@ -34,7 +34,7 @@ const post = [
 const App = () => (
   <Fragment>
     <Header />
-    {post.map(p => <Post key={p.id} post={p} />)}
+    <div className="wrapperPost">{post.map(p => <Post key={p.id} post={p} />)}</div>
   </Fragment>
 );
 
